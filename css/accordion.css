@@ -1,0 +1,29 @@
+.accordion {
+    width: 400px;
+}
+
+.accordion-section {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+}
+
+.accordion-content.active {
+    max-height: 500px;
+}
+
+.accordion-content>div {
+    padding: 5px;
+}

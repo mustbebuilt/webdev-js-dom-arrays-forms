@@ -10,20 +10,36 @@
       media="only screen and (min-width:720px)"
       href="css/desktop.css"
     />
+    <script src="js/colourChanger.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1 id="myHeading">My Demo Site</h1>
-      </header>
-      <div class="main">
+        <div>
+          <h1 id="myHeading">My Demo Site</h1>
+        </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="exchangeRate.html">Exchange Calculator</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
+            <li>          
+              <form>
+                <label for="colourPicker">Background Colour:</label>
+            <select name="colourPicker" id="colourPicker">
+              <option value="red">Pick Colour</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="default">Default</option>
+            </select>
+          </form></li>
           </ul>
+
         </nav>
+      </header>
+      <div class="main">
+
         <div class="content">
           <h2>Rotating Images</h2>
           <p>
@@ -35,7 +51,12 @@
             <span class="blue colPicker">Blue</span>,
             <span class="reset colPicker">Default</span>
           </p>
-          <p id="myTestEvent">Test Event</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia at tempore corrupti temporibus quia modi dolores aliquam voluptas maiores reprehenderit necessitatibus et atque veniam unde suscipit, hic laudantium quaerat consectetur.
+          Quam omnis eum dicta minus maiores dolores consequatur autem nemo ex voluptate, voluptatibus commodi pariatur quas eligendi tempora architecto error cumque. Esse voluptatibus, dolorum consequuntur vero fuga consectetur suscipit ducimus?
+          Ducimus numquam magnam recusandae ab obcaecati harum, veniam debitis? Culpa voluptate vitae ad eius nostrum sequi veritatis ea totam! Dicta itaque soluta, voluptas distinctio perspiciatis veritatis libero vitae quam dignissimos.
+          Aliquid quas quae maxime! Repellendus consequuntur voluptate, facere reprehenderit facilis explicabo rerum atque similique. Labore hic accusantium cumque similique tenetur laboriosam optio? Est excepturi sint saepe autem! Libero, unde aspernatur.
+          Placeat reiciendis numquam odio atque possimus, mollitia nesciunt aliquam voluptatibus vero delectus veritatis beatae aspernatur hic iusto at. Optio itaque porro corporis dignissimos doloremque illo. Hic, facilis. Aliquid, iste doloremque?</p>
+          <button id="myTestEvent">Test Event</button>
         </div>
       </div>
       <footer>&copy; 2023 mustbebuilt</footer>
